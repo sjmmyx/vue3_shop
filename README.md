@@ -1,5 +1,12 @@
 # vue_shop
 
+## 开发流程
+
+### vue ui
+新建初始化项目
+安装路由 插件>router
+安装ElementPlus  依赖>ElementPlus
+
 ## Project setup
 ```
 npm install
