@@ -28,7 +28,7 @@
 
 <script>
 // 引入 axios 库
-import axios from "axios";
+// import axios from "axios";
 
 export default {
     data(){
@@ -63,8 +63,7 @@ export default {
             this.$refs["loginFormRef"].validate(async (valid) => {
                 // 2.验证成功后执行
                 if (!valid) return;
-                const api = "http://192.168.3.228:8888/api/private/v1/login";
-                const { data: res } = await axios.post(api, this.loginForm);
+                const { data: res } = await this.$axios.post('login', this.loginForm);
                 // 登录失败 返回错误信息
                 // if (res.meta.status !== 200) return this.$message.error("登录失败："+res.meta.msg,{center:true})
                 if (res.meta.status !== 200)
