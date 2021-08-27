@@ -7,6 +7,10 @@
 2.安装路由 插件>router
 3.安装ElementPlus  依赖>ElementPlus
 
+### 开发依赖
+less-loader
+less
+
 ## Project setup
 ```
 npm install
